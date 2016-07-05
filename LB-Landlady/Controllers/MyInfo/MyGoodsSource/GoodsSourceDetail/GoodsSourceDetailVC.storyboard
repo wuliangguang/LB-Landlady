@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5K9-NS-2dI">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Goods Source DetailVC-->
+        <scene sceneID="Syr-hZ-8TY">
+            <objects>
+                <viewController id="5K9-NS-2dI" customClass="GoodsSourceDetailVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="E1d-R6-KFh"/>
+                        <viewControllerLayoutGuide type="bottom" id="pbY-hs-dZv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QCm-V7-PRx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="8Nh-0n-klf">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="524"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="5K9-NS-2dI" id="9pF-q3-XCd"/>
+                                    <outlet property="delegate" destination="5K9-NS-2dI" id="XR2-cv-8yn"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="8Nh-0n-klf" secondAttribute="trailing" id="091-fy-nbx"/>
+                            <constraint firstAttribute="bottom" secondItem="8Nh-0n-klf" secondAttribute="bottom" constant="50" id="0MA-yW-uqF"/>
+                            <constraint firstItem="8Nh-0n-klf" firstAttribute="top" secondItem="QCm-V7-PRx" secondAttribute="top" id="34Q-5H-DLh"/>
+                            <constraint firstItem="8Nh-0n-klf" firstAttribute="leading" secondItem="QCm-V7-PRx" secondAttribute="leading" id="Gc0-dY-5hR"/>
+                            <constraint firstItem="8Nh-0n-klf" firstAttribute="leading" secondItem="QCm-V7-PRx" secondAttribute="leading" id="bze-bj-wvP"/>
+                            <constraint firstAttribute="trailing" secondItem="8Nh-0n-klf" secondAttribute="trailing" id="fUH-Cm-ibI"/>
+                            <constraint firstItem="pbY-hs-dZv" firstAttribute="top" secondItem="8Nh-0n-klf" secondAttribute="bottom" id="fkv-iQ-VQc"/>
+                            <constraint firstItem="8Nh-0n-klf" firstAttribute="top" secondItem="QCm-V7-PRx" secondAttribute="top" id="xY9-2g-5M6"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0MA-yW-uqF"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="tableview" destination="8Nh-0n-klf" id="mmB-Jg-xbo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OgW-Iz-aCB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="99" y="-61"/>
+        </scene>
+    </scenes>
+</document>

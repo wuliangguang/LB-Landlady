@@ -1,0 +1,122 @@
+//
+//  Landlady.pch
+//  LB-Landlady
+//
+//  Created by d2space on 16/1/7.
+//  Copyright © 2016年 Lianbi.com.cn. All rights reserved.
+//
+
+#ifndef Landlady_pch
+#define Landlady_pch
+
+#if DEBUG || defined(DEBUG)
+#define FMLog(fmt, ...) NSLog((@"[%s:%d] " fmt), __func__, __LINE__, ##__VA_ARGS__);
+#else
+#define FMLog(...);
+#endif
+
+//#define SWITCHLOGIN(login,tourist) 
+
+/**
+ *  Current Version
+ */
+#define IOS7 ([[[UIDevice currentDevice] systemVersion]floatValue] >= 7.0f && [[[UIDevice currentDevice] systemVersion]floatValue] < 8.0)
+#define IOS8 ([[[UIDevice currentDevice] systemVersion]floatValue] >= 8.0f)
+#define IOS6 [[[UIDevice currentDevice] systemVersion]floatValue] < 7.0f
+#define IOS9 ([[[UIDevice currentDevice] systemVersion]floatValue] >= 9.0f)
+
+/**
+ *  Current Device
+ */
+#define iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+#define iPhone4 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : NO)
+#define iPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) : NO)
+#define iPhone6P ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) : NO)
+#define isPad ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad ? YES:NO)
+
+/**
+ *  Current Device Screen Size
+ */
+#define kScreenWidth  [[UIScreen mainScreen] applicationFrame].size.width
+#define kScreenHeight [[UIScreen mainScreen] applicationFrame].size.height
+
+
+/*
+ *Color
+ */
+#define ColorA(R,G,B,A)  [UIColor colorWithRed:(R)/255.0 green:(G)/255.0 blue:(B)/255.0 alpha:(A)]
+#define Color(R,G,B)     [UIColor colorWithRed:(R)/255.0 green:(G)/255.0 blue:(B)/255.0 alpha:1.0]
+#define ACTIVITY_INDICATOR_COLOR [UIColor colorWithRed:0.9 green:0.9 blue:0.9 alpha:1.0]
+
+/**
+ *  App Colors
+ */
+#define LD_COLOR_ONE      [HEXColor getColor:@"#ff3c25"]
+#define LD_COLOR_TWO      [HEXColor getColor:@"#e2383b"]
+#define LD_COLOR_THREE    [HEXColor getColor:@"#f46200"]
+#define LD_COLOR_FOUR     [HEXColor getColor:@"#ff7e00"]
+#define LD_COLOR_FIVE     [HEXColor getColor:@"#f2d21d"]
+#define LD_COLOR_SIX      [HEXColor getColor:@"#21e369"]
+#define LD_COLOR_SEVEN    [HEXColor getColor:@"#14c4c4"]
+#define LD_COLOR_EIGHT    [HEXColor getColor:@"#009cff"]
+#define LD_COLOR_NINE     [HEXColor getColor:@"#007dff"]
+//字体色
+#define LD_COLOR_TEN      [HEXColor getColor:@"#262626"]
+#define LD_COLOR_ELEVEN   [HEXColor getColor:@"#b4b4b4"]
+#define LD_COLOR_TWELVE   [HEXColor getColor:@"#cccccc"]
+#define LD_COLOR_THIRTEEN [HEXColor getColor:@"#dbdbdb"]
+/**
+ *  background Color
+ */
+#define LD_COLOR_FOURTEEN [HEXColor getColor:@"#ededed"]
+
+//字体大小
+#define LK_FONT_SIZE_ONE       [UIFont systemFontOfSize:18]
+#define LK_FONT_SIZE_TWO       [UIFont systemFontOfSize:16]
+#define LK_FONT_SIZE_THREE     [UIFont systemFontOfSize:14]
+#define LK_FONT_SIZE_FOUR      [UIFont systemFontOfSize:12]
+#define LK_FONT_SIZE_FIVE      [UIFont systemFontOfSize:11]
+
+/**
+ *  统一配置MBProgressHUD显示时间
+ */
+#define ERROR_DELAY      3
+#define SUCCESSFUL_DELAY 1
+
+#define SUCCESS_CODE 000000
+
+/**
+ *  当前登录用户单例
+ */
+#import "AppUserInfo.h"
+#define App_User_Info ([AppUserInfo initAppUserInfo])
+
+/**
+ *  网络请求
+ */
+#import "SendRequest.h"
+#define S_R ([SendRequest sharedInstance])
+
+/** 常用block类型 */
+typedef dispatch_block_t block_void_t; // 无参block类型
+typedef void (^block_id_t)(id obj); // 含有一个参数的block类型
+
+/** CommonModel */
+#import "CommonModel.h"
+#import "NSDate+Helper.h"
+#import "MBProgressHUD.h"
+#import "HEXColor.h"
+#import "IQKeyboardManager.h"
+#import "MJExtension.h"
+#import "NSString+Helper.h"
+#import "MJRefresh.h"
+#import "URLService.h"
+#import "ZZShowMessage.h"
+#import "NSArray+Hepler.h"
+#import "SendRequestModel.h"
+#import <LianBiLib/Base64.h>
+
+#endif /* Landlady_pch */
+
+
+

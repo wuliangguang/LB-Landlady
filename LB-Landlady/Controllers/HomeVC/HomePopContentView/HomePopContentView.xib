@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HomePopContentView">
+            <rect key="frame" x="0.0" y="0.0" width="127" height="75"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rzt-Do-jB4">
+                    <rect key="frame" x="14" y="45" width="99" height="22"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <inset key="titleEdgeInsets" minX="13" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="19" maxY="0.0"/>
+                    <state key="normal" title="订单生成" image="home_order_generate">
+                        <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                    </state>
+                    <connections>
+                        <action selector="orderGenerateButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="T3o-hK-8yU"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QyK-Ol-uDB">
+                    <rect key="frame" x="14" y="38" width="99" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DLe-q2-UeR">
+                    <rect key="frame" x="14" y="9" width="99" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="Obo-uA-DQk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <inset key="titleEdgeInsets" minX="13" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="19" maxY="0.0"/>
+                    <state key="normal" title="订单列表" image="home_order_list">
+                        <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                    </state>
+                    <connections>
+                        <action selector="orderListButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="8wh-MH-aOn"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Rzt-Do-jB4" secondAttribute="bottom" constant="8" id="1py-I7-JGP"/>
+                <constraint firstItem="DLe-q2-UeR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="9" id="Sus-6j-vbM"/>
+                <constraint firstAttribute="trailing" secondItem="DLe-q2-UeR" secondAttribute="trailing" constant="14" id="UEC-Nh-JMD"/>
+                <constraint firstAttribute="trailing" secondItem="Rzt-Do-jB4" secondAttribute="trailing" constant="14" id="ciY-mi-CnU"/>
+                <constraint firstItem="DLe-q2-UeR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="14" id="iJG-1G-ydc"/>
+                <constraint firstItem="Rzt-Do-jB4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="14" id="juC-v9-Szo"/>
+                <constraint firstItem="Rzt-Do-jB4" firstAttribute="top" secondItem="DLe-q2-UeR" secondAttribute="bottom" constant="14" id="lWp-gM-IY7"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="77.5" y="223.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="home_order_generate" width="21" height="21"/>
+        <image name="home_order_list" width="21" height="21"/>
+    </resources>
+</document>

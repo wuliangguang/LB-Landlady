@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ggs-JG-hga">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--My Merchant List View Controller-->
+        <scene sceneID="dJe-O7-ZY5">
+            <objects>
+                <viewController id="ggs-JG-hga" customClass="MyMerchantListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VJd-3m-oJO"/>
+                        <viewControllerLayoutGuide type="bottom" id="GS0-G8-f7v"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2l3-Rx-MLx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PRD-UG-fqA">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="530"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="ggs-JG-hga" id="Qph-aU-M9F"/>
+                                    <outlet property="delegate" destination="ggs-JG-hga" id="ui9-GN-zeF"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x5E-gp-j76">
+                                <rect key="frame" x="0.0" y="530" width="600" height="70"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9v-OB-uko">
+                                        <rect key="frame" x="20" y="15" width="560" height="40"/>
+                                        <color key="backgroundColor" red="1" green="0.23529411759999999" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="新增商铺">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="addMerchant:" destination="ggs-JG-hga" eventType="touchUpInside" id="lwx-82-ZXN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="G9v-OB-uko" firstAttribute="leading" secondItem="x5E-gp-j76" secondAttribute="leading" constant="20" id="0O2-6A-0gB"/>
+                                    <constraint firstAttribute="trailing" secondItem="G9v-OB-uko" secondAttribute="trailing" constant="20" id="K5i-99-Vwd"/>
+                                    <constraint firstItem="G9v-OB-uko" firstAttribute="top" secondItem="x5E-gp-j76" secondAttribute="top" constant="15" id="Qeo-uc-NDT"/>
+                                    <constraint firstAttribute="bottom" secondItem="G9v-OB-uko" secondAttribute="bottom" constant="15" id="TTH-gh-8p2"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="PRD-UG-fqA" secondAttribute="trailing" id="204-yn-Zak"/>
+                            <constraint firstItem="x5E-gp-j76" firstAttribute="leading" secondItem="2l3-Rx-MLx" secondAttribute="leading" id="EFc-pz-Iie"/>
+                            <constraint firstAttribute="trailing" secondItem="x5E-gp-j76" secondAttribute="trailing" id="JQQ-ot-cjJ"/>
+                            <constraint firstItem="x5E-gp-j76" firstAttribute="top" secondItem="PRD-UG-fqA" secondAttribute="bottom" id="Xj8-dH-mhh"/>
+                            <constraint firstItem="GS0-G8-f7v" firstAttribute="top" secondItem="x5E-gp-j76" secondAttribute="bottom" id="b7c-QV-bDy"/>
+                            <constraint firstItem="PRD-UG-fqA" firstAttribute="top" secondItem="2l3-Rx-MLx" secondAttribute="top" id="eid-0J-fJ2"/>
+                            <constraint firstItem="GS0-G8-f7v" firstAttribute="top" secondItem="PRD-UG-fqA" secondAttribute="bottom" constant="70" id="nll-fS-dKd"/>
+                            <constraint firstItem="PRD-UG-fqA" firstAttribute="leading" secondItem="2l3-Rx-MLx" secondAttribute="leading" id="xSf-Tw-L7u"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="PRD-UG-fqA" id="oyN-7P-c1C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="scu-sn-saG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="644" y="-324"/>
+        </scene>
+    </scenes>
+</document>

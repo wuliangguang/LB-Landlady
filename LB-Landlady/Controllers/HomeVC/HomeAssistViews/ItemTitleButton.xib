@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="LeU-Fb-Jc9" customClass="ItemTitleButton">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="即将上架" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="My8-e7-aoZ">
+                    <rect key="frame" x="0.0" y="100" width="100" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="S2d-ej-0gd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_main_1_1" translatesAutoresizingMaskIntoConstraints="NO" id="xE8-LC-gqX" customClass="ItemImageView">
+                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="My8-e7-aoZ" firstAttribute="leading" secondItem="LeU-Fb-Jc9" secondAttribute="leading" id="1zR-eo-DZF"/>
+                <constraint firstAttribute="trailing" secondItem="My8-e7-aoZ" secondAttribute="trailing" id="7P8-c1-mZf"/>
+                <constraint firstAttribute="bottom" secondItem="My8-e7-aoZ" secondAttribute="bottom" id="GMj-cj-5pd"/>
+                <constraint firstItem="xE8-LC-gqX" firstAttribute="top" secondItem="LeU-Fb-Jc9" secondAttribute="top" id="PZm-FO-syi"/>
+                <constraint firstItem="My8-e7-aoZ" firstAttribute="top" secondItem="xE8-LC-gqX" secondAttribute="bottom" id="QE5-6u-Tq1"/>
+                <constraint firstItem="xE8-LC-gqX" firstAttribute="leading" secondItem="LeU-Fb-Jc9" secondAttribute="leading" id="eUe-6W-qDL"/>
+                <constraint firstAttribute="trailing" secondItem="xE8-LC-gqX" secondAttribute="trailing" id="f6z-QB-RJ5"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageView" destination="xE8-LC-gqX" id="wNe-gP-FfF"/>
+                <outlet property="textLabel" destination="My8-e7-aoZ" id="J2h-1d-bql"/>
+            </connections>
+            <point key="canvasLocation" x="494" y="196"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="default_main_1_1" width="80" height="80"/>
+    </resources>
+</document>

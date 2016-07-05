@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="w7S-1e-w1L">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--My Merchant Category Detail View Controller-->
+        <scene sceneID="sh0-Nd-iDp">
+            <objects>
+                <viewController id="w7S-1e-w1L" customClass="MyMerchantCategoryDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qbc-Up-A8C"/>
+                        <viewControllerLayoutGuide type="bottom" id="4jb-Qg-nBc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2dR-DE-ic2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C1V-mo-gQF">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="30"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5FR-B0-fhc" userLabel="RedLine">
+                                        <rect key="frame" x="0.0" y="5" width="2" height="20"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="xxx包含的经营内容" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pqK-hO-4hI">
+                                        <rect key="frame" x="8" y="5" width="584" height="20"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="azL-h5-5gw"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TN6-vf-xnW" userLabel="HorLine">
+                                <rect key="frame" x="0.0" y="30" width="600" height="1"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="rMr-is-r7s"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小吃 火锅 快餐 小吃 火锅 快餐 小吃 火锅 火锅 快餐 小吃 火锅 快餐 小吃 火锅 小吃 火锅 快餐 小吃 火锅 火锅 快餐 小吃 火锅 快餐 小吃 火锅" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GoO-lf-VV8" userLabel="Label">
+                                <rect key="frame" x="8" y="36" width="584" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TN6-vf-xnW" firstAttribute="leading" secondItem="2dR-DE-ic2" secondAttribute="leading" id="3GR-7r-WXm"/>
+                            <constraint firstItem="C1V-mo-gQF" firstAttribute="top" secondItem="2dR-DE-ic2" secondAttribute="top" id="4pV-PF-eZg"/>
+                            <constraint firstItem="C1V-mo-gQF" firstAttribute="leading" secondItem="2dR-DE-ic2" secondAttribute="leading" id="Gkp-gv-N7c"/>
+                            <constraint firstItem="GoO-lf-VV8" firstAttribute="top" secondItem="TN6-vf-xnW" secondAttribute="bottom" constant="5" id="Lex-VZ-V6a"/>
+                            <constraint firstAttribute="trailing" secondItem="C1V-mo-gQF" secondAttribute="trailing" id="WOu-ZP-dbv"/>
+                            <constraint firstItem="GoO-lf-VV8" firstAttribute="leading" secondItem="2dR-DE-ic2" secondAttribute="leading" constant="8" id="ZZb-IY-j4U"/>
+                            <constraint firstItem="TN6-vf-xnW" firstAttribute="top" secondItem="C1V-mo-gQF" secondAttribute="bottom" id="eBY-iq-XIk"/>
+                            <constraint firstAttribute="trailing" secondItem="TN6-vf-xnW" secondAttribute="trailing" id="ih7-WF-Ovv"/>
+                            <constraint firstAttribute="trailing" secondItem="GoO-lf-VV8" secondAttribute="trailing" constant="8" id="ofR-dN-LBc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VzS-WP-qUI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="514" y="36"/>
+        </scene>
+    </scenes>
+</document>

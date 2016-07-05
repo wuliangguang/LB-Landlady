@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ViewForGL">
+            <rect key="frame" x="0.0" y="0.0" width="330" height="148"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OeI-YX-Edb">
+                    <rect key="frame" x="20" y="15" width="118" height="118"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="OeI-YX-Edb" secondAttribute="height" multiplier="1:1" id="D88-zD-2Y9"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCO-QI-be8">
+                    <rect key="frame" x="148" y="15" width="49" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4gk-ai-mCM">
+                    <rect key="frame" x="148" y="119.5" width="28.5" height="13.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9h-iP-BTH">
+                    <rect key="frame" x="0.0" y="0.0" width="330" height="148"/>
+                    <connections>
+                        <action selector="buttonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="rD5-Xq-4xZ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="4gk-ai-mCM" firstAttribute="leading" secondItem="OeI-YX-Edb" secondAttribute="trailing" constant="10" id="1lT-Ej-cAs"/>
+                <constraint firstAttribute="bottom" secondItem="OeI-YX-Edb" secondAttribute="bottom" constant="15" id="Iph-wO-ZOT"/>
+                <constraint firstItem="tCO-QI-be8" firstAttribute="top" secondItem="OeI-YX-Edb" secondAttribute="top" id="JZ3-jf-Ea4"/>
+                <constraint firstItem="tCO-QI-be8" firstAttribute="leading" secondItem="OeI-YX-Edb" secondAttribute="trailing" constant="10" id="SXU-6S-7yq"/>
+                <constraint firstItem="t9h-iP-BTH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="UiJ-Do-zh6"/>
+                <constraint firstItem="t9h-iP-BTH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="WEE-cW-6VW"/>
+                <constraint firstAttribute="trailing" secondItem="t9h-iP-BTH" secondAttribute="trailing" id="YrG-3o-You"/>
+                <constraint firstItem="OeI-YX-Edb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="aKK-b3-q4a"/>
+                <constraint firstAttribute="bottom" secondItem="t9h-iP-BTH" secondAttribute="bottom" id="dTq-HZ-97h"/>
+                <constraint firstItem="4gk-ai-mCM" firstAttribute="bottom" secondItem="OeI-YX-Edb" secondAttribute="bottom" id="kZB-aB-AzE"/>
+                <constraint firstItem="OeI-YX-Edb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="tsG-qt-c7d"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bgBTN" destination="t9h-iP-BTH" id="2ea-aN-aEf"/>
+                <outlet property="detailLAB" destination="4gk-ai-mCM" id="bZO-u4-aY2"/>
+                <outlet property="iconImageview" destination="OeI-YX-Edb" id="joY-iG-pZ1"/>
+                <outlet property="titleLAB" destination="tCO-QI-be8" id="cnV-O2-1gp"/>
+            </connections>
+            <point key="canvasLocation" x="422" y="119"/>
+        </view>
+    </objects>
+</document>

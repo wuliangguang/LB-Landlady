@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="105" id="KGk-i7-Jjw" customClass="ProductPoolCell">
+            <rect key="frame" x="0.0" y="0.0" width="342" height="105"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="342" height="104.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_1_1" translatesAutoresizingMaskIntoConstraints="NO" id="uSE-cy-sRc">
+                        <rect key="frame" x="20" y="11" width="82.5" height="82.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="uSE-cy-sRc" secondAttribute="height" multiplier="1:1" id="GID-Sh-5Yc"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="西北菜-手抓饼" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S15-YD-iWB" userLabel="pCategroy">
+                        <rect key="frame" x="112" y="38" width="78" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.70588235290000001" green="0.70588235290000001" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GTv-mx-5PO">
+                        <rect key="frame" x="274" y="11" width="48" height="20"/>
+                        <color key="backgroundColor" red="0.85882352939999995" green="0.85882352939999995" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="gUE-Fg-UEN"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="已下架">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="btnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="6zX-R6-3v3"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="产品名称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CxI-rg-aXE" userLabel="pName">
+                        <rect key="frame" x="112" y="11" width="56" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="default_1_1" translatesAutoresizingMaskIntoConstraints="NO" id="Uyw-gT-Fa4">
+                        <rect key="frame" x="249" y="11" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="WZ4-vU-IL1"/>
+                            <constraint firstAttribute="height" constant="15" id="tWf-Bx-CjM"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016-01-25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uIg-dp-OnK">
+                        <rect key="frame" x="254" y="63" width="67.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.70588235290000001" green="0.70588235290000001" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥36.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLf-MD-L3a" userLabel="pPrice">
+                        <rect key="frame" x="112" y="62" width="46" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="HLf-MD-L3a" firstAttribute="top" secondItem="S15-YD-iWB" secondAttribute="bottom" constant="10" id="2V8-HG-AV3"/>
+                    <constraint firstItem="uSE-cy-sRc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="4ku-mA-xeK"/>
+                    <constraint firstItem="S15-YD-iWB" firstAttribute="leading" secondItem="CxI-rg-aXE" secondAttribute="leading" id="8bk-Ja-ygL"/>
+                    <constraint firstItem="GTv-mx-5PO" firstAttribute="leading" secondItem="Uyw-gT-Fa4" secondAttribute="trailing" constant="10" id="CXL-vw-kLb"/>
+                    <constraint firstAttribute="trailing" secondItem="GTv-mx-5PO" secondAttribute="trailing" constant="20" id="DY6-ux-b2t"/>
+                    <constraint firstItem="GTv-mx-5PO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="K7U-Ln-kVe"/>
+                    <constraint firstItem="Uyw-gT-Fa4" firstAttribute="top" secondItem="CxI-rg-aXE" secondAttribute="top" id="LKE-a1-uPX"/>
+                    <constraint firstAttribute="trailing" secondItem="uIg-dp-OnK" secondAttribute="trailing" constant="20" id="NDU-9U-NgF"/>
+                    <constraint firstItem="CxI-rg-aXE" firstAttribute="top" secondItem="uSE-cy-sRc" secondAttribute="top" id="Ns3-Cq-ezv"/>
+                    <constraint firstItem="S15-YD-iWB" firstAttribute="top" secondItem="CxI-rg-aXE" secondAttribute="bottom" constant="10" id="d5s-TV-0dl"/>
+                    <constraint firstItem="HLf-MD-L3a" firstAttribute="leading" secondItem="S15-YD-iWB" secondAttribute="leading" id="mqc-OO-idK"/>
+                    <constraint firstItem="uSE-cy-sRc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="msl-GO-prA"/>
+                    <constraint firstItem="uIg-dp-OnK" firstAttribute="bottom" secondItem="HLf-MD-L3a" secondAttribute="bottom" constant="-2" id="vu7-1D-XcU"/>
+                    <constraint firstItem="CxI-rg-aXE" firstAttribute="leading" secondItem="uSE-cy-sRc" secondAttribute="trailing" constant="10" id="zSQ-Ia-n4X"/>
+                    <constraint firstAttribute="bottom" secondItem="uSE-cy-sRc" secondAttribute="bottom" constant="11" id="zmJ-Ns-ty7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="PImageView" destination="uSE-cy-sRc" id="PtJ-8N-xsR"/>
+                <outlet property="PnameLab" destination="CxI-rg-aXE" id="VLv-bF-kWJ"/>
+                <outlet property="pCategroyLab" destination="S15-YD-iWB" id="zYF-Dm-eLl"/>
+                <outlet property="pPriceLab" destination="HLf-MD-L3a" id="Q5E-3J-IDg"/>
+                <outlet property="pStatusImageview" destination="Uyw-gT-Fa4" id="kJM-SU-rzZ"/>
+                <outlet property="pTimeLab" destination="uIg-dp-OnK" id="h79-hC-fwP"/>
+                <outlet property="pstatusBtn" destination="GTv-mx-5PO" id="8CT-27-P8K"/>
+            </connections>
+            <point key="canvasLocation" x="236" y="270.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="default_1_1" width="80" height="80"/>
+    </resources>
+</document>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="list" id="TZx-cD-fbI" customClass="VIPListCell">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TZx-cD-fbI" id="Kvk-tB-wv7">
+                <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="会员等级" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBB-6u-Mtv">
+                        <rect key="frame" x="52" y="13" width="56" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vipMake" translatesAutoresizingMaskIntoConstraints="NO" id="I7J-u8-8am">
+                        <rect key="frame" x="20" y="11" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="22" id="DkY-w6-Mlk"/>
+                            <constraint firstAttribute="height" constant="22" id="gd9-Mh-Kjj"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="普通会员" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kBb-9I-zSz">
+                        <rect key="frame" x="118" y="13.5" width="56" height="17"/>
+                        <color key="backgroundColor" red="0.94117647059999998" green="0.82352941180000006" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fBB-6u-Mtv" firstAttribute="centerY" secondItem="Kvk-tB-wv7" secondAttribute="centerY" id="Ace-o2-AzX"/>
+                    <constraint firstItem="I7J-u8-8am" firstAttribute="top" secondItem="Kvk-tB-wv7" secondAttribute="top" constant="11" id="EYb-3w-lD9"/>
+                    <constraint firstItem="kBb-9I-zSz" firstAttribute="centerY" secondItem="Kvk-tB-wv7" secondAttribute="centerY" id="Xcs-WC-5iQ"/>
+                    <constraint firstItem="kBb-9I-zSz" firstAttribute="leading" secondItem="fBB-6u-Mtv" secondAttribute="trailing" constant="10" id="foE-F9-Jcx"/>
+                    <constraint firstItem="fBB-6u-Mtv" firstAttribute="leading" secondItem="I7J-u8-8am" secondAttribute="trailing" constant="10" id="kwT-Y8-nMK"/>
+                    <constraint firstItem="I7J-u8-8am" firstAttribute="leading" secondItem="Kvk-tB-wv7" secondAttribute="leading" constant="20" id="qpA-Qx-WiX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="vipLevelName" destination="kBb-9I-zSz" id="OC5-oU-Twx"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="vipMake" width="19" height="19"/>
+    </resources>
+</document>

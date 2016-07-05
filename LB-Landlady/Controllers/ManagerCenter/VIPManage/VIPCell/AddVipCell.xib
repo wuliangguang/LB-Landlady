@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="add" id="KGk-i7-Jjw" customClass="AddVipCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOt-1B-eXN">
+                        <rect key="frame" x="210" y="11" width="45" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="fvQ-1f-efR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="拒绝">
+                            <color key="titleColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="rejectBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="h3n-1v-ssH"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sqd-xA-VBd">
+                        <rect key="frame" x="265" y="11" width="45" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="tyh-B8-99E"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="同意">
+                            <color key="titleColor" red="1" green="0.23529411764705882" blue="0.14509803921568626" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="OKBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="6cV-R7-wUB"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wMg-sA-Vh5">
+                        <rect key="frame" x="20" y="11" width="31" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="GJ7-Sj-WbY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bOt-1B-eXN" firstAttribute="top" secondItem="wMg-sA-Vh5" secondAttribute="top" id="3Sx-R4-U8o"/>
+                    <constraint firstItem="sqd-xA-VBd" firstAttribute="leading" secondItem="bOt-1B-eXN" secondAttribute="trailing" constant="10" id="46i-CW-4hj"/>
+                    <constraint firstItem="sqd-xA-VBd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="D1Q-x6-7Gz"/>
+                    <constraint firstItem="sqd-xA-VBd" firstAttribute="top" secondItem="wMg-sA-Vh5" secondAttribute="top" id="Fg4-bq-Dzl"/>
+                    <constraint firstAttribute="trailing" secondItem="sqd-xA-VBd" secondAttribute="trailing" constant="10" id="OpO-WF-KVA"/>
+                    <constraint firstItem="wMg-sA-Vh5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="god-ii-2Rr"/>
+                    <constraint firstItem="wMg-sA-Vh5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="k6n-aO-uiW"/>
+                    <constraint firstItem="sqd-xA-VBd" firstAttribute="height" secondItem="wMg-sA-Vh5" secondAttribute="height" id="kXQ-nw-vqu"/>
+                    <constraint firstItem="wMg-sA-Vh5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="u41-Ed-FkV"/>
+                    <constraint firstItem="bOt-1B-eXN" firstAttribute="height" secondItem="wMg-sA-Vh5" secondAttribute="height" id="yjr-ek-yJk"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="god-ii-2Rr"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="OKbtn" destination="sqd-xA-VBd" id="uDw-Og-QWw"/>
+                <outlet property="rejectBtn" destination="bOt-1B-eXN" id="Md6-iW-8Bk"/>
+                <outlet property="telNumLab" destination="wMg-sA-Vh5" id="jsw-0h-Hkc"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

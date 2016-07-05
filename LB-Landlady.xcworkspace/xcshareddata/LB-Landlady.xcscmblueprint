@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5ac90425-1851-4e92-a9c6-040ce5d4e07e++6986",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "5ac90425-1851-4e92-a9c6-040ce5d4e07e++6986" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "5ac90425-1851-4e92-a9c6-040ce5d4e07e++6986" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "99719C2F-A1FC-4101-9100-B65A57673455",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "5ac90425-1851-4e92-a9c6-040ce5d4e07e++6986" : "ios\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "LB-Landlady",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "LB-Landlady\/LB-Landlady.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/bolin.zhang@172.16.103.110\/LinkTownB",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5ac90425-1851-4e92-a9c6-040ce5d4e07e++6986"
+    }
+  ]
+}

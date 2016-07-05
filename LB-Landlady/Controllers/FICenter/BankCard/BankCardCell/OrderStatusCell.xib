@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="orderNum" id="o1l-WR-Vpu" customClass="OrderStatusCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="o1l-WR-Vpu" id="Bxb-an-KkJ">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已完成" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sII-51-vlH">
+                        <rect key="frame" x="262" y="11" width="50" height="21"/>
+                        <color key="backgroundColor" red="0.12941176469999999" green="0.89019607840000003" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="1b2-2R-VBe"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZs-YM-zoF">
+                        <rect key="frame" x="58" y="11" width="209" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="订单号" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="byF-Ae-YWy">
+                        <rect key="frame" x="8" y="11" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.70588235290000001" green="0.70588235290000001" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xZs-YM-zoF" firstAttribute="trailing" secondItem="sII-51-vlH" secondAttribute="leading" constant="5" id="3GI-XS-cVY"/>
+                    <constraint firstItem="byF-Ae-YWy" firstAttribute="leading" secondItem="Bxb-an-KkJ" secondAttribute="leading" constant="8" id="ONf-7D-tkq"/>
+                    <constraint firstAttribute="bottom" secondItem="sII-51-vlH" secondAttribute="bottom" constant="11" id="Pau-Ao-YKu"/>
+                    <constraint firstAttribute="bottom" secondItem="xZs-YM-zoF" secondAttribute="bottom" constant="11" id="TAT-Wk-N8e"/>
+                    <constraint firstItem="xZs-YM-zoF" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Bxb-an-KkJ" secondAttribute="top" constant="11" id="bpz-gr-nJ5"/>
+                    <constraint firstAttribute="bottom" secondItem="byF-Ae-YWy" secondAttribute="bottom" constant="11" id="dGx-KN-Kl5"/>
+                    <constraint firstAttribute="trailing" secondItem="sII-51-vlH" secondAttribute="trailing" constant="8" id="fmd-Zz-Rbz"/>
+                    <constraint firstItem="xZs-YM-zoF" firstAttribute="top" secondItem="Bxb-an-KkJ" secondAttribute="top" constant="11" id="li7-YH-2pp"/>
+                    <constraint firstItem="byF-Ae-YWy" firstAttribute="top" secondItem="Bxb-an-KkJ" secondAttribute="top" constant="11" id="maW-kW-gZL"/>
+                    <constraint firstItem="byF-Ae-YWy" firstAttribute="height" secondItem="xZs-YM-zoF" secondAttribute="height" id="p6S-wq-svq"/>
+                    <constraint firstItem="sII-51-vlH" firstAttribute="top" secondItem="Bxb-an-KkJ" secondAttribute="top" constant="11" id="q6G-Ju-Ijh"/>
+                    <constraint firstItem="xZs-YM-zoF" firstAttribute="leading" secondItem="byF-Ae-YWy" secondAttribute="trailing" constant="8" id="sdv-uW-2bm"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="p6S-wq-svq"/>
+                        <exclude reference="bpz-gr-nJ5"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="orderNumLab" destination="xZs-YM-zoF" id="nae-cH-XEW"/>
+                <outlet property="orderStatusLab" destination="sII-51-vlH" id="yyd-tQ-uwz"/>
+            </connections>
+            <point key="canvasLocation" x="259" y="136"/>
+        </tableViewCell>
+    </objects>
+</document>

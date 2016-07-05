@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="445" height="62"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QS6-tC-qym">
+                    <rect key="frame" x="10" y="10" width="45" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="Vy9-VY-5q0"/>
+                        <constraint firstAttribute="width" constant="45" id="f9V-dZ-tml"/>
+                    </constraints>
+                    <inset key="contentEdgeInsets" minX="-25" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" image="left"/>
+                    <connections>
+                        <action selector="leftBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="0Mm-7k-DfQ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NCc-VD-JEz">
+                    <rect key="frame" x="390" y="10" width="45" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="7hd-ew-WZ9"/>
+                        <constraint firstAttribute="width" constant="45" id="co6-zh-tAQ"/>
+                    </constraints>
+                    <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="-25" maxY="0.0"/>
+                    <state key="normal" image="right"/>
+                    <connections>
+                        <action selector="rightBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="KqI-nH-acW"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kMM-ue-pvh">
+                    <rect key="frame" x="55" y="10" width="335" height="22"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLc-FL-v9i">
+                            <rect key="frame" x="0.0" y="0.0" width="305" height="22"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQJ-hQ-nOe">
+                            <rect key="frame" x="313" y="0.0" width="22" height="22"/>
+                            <state key="normal" image="Bootm"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="fQJ-hQ-nOe" firstAttribute="leading" secondItem="MLc-FL-v9i" secondAttribute="trailing" constant="8" id="3ZN-NK-AHY"/>
+                        <constraint firstItem="fQJ-hQ-nOe" firstAttribute="top" secondItem="kMM-ue-pvh" secondAttribute="top" id="RUS-YK-BXy"/>
+                        <constraint firstItem="MLc-FL-v9i" firstAttribute="leading" secondItem="kMM-ue-pvh" secondAttribute="leading" id="Tcd-NJ-8NA"/>
+                        <constraint firstAttribute="trailing" secondItem="fQJ-hQ-nOe" secondAttribute="trailing" id="X3r-ri-L8n"/>
+                        <constraint firstItem="MLc-FL-v9i" firstAttribute="top" secondItem="kMM-ue-pvh" secondAttribute="top" id="Zm7-Zp-cbt"/>
+                        <constraint firstAttribute="bottom" secondItem="MLc-FL-v9i" secondAttribute="bottom" id="hU7-gP-oHH"/>
+                        <constraint firstItem="MLc-FL-v9i" firstAttribute="centerX" secondItem="kMM-ue-pvh" secondAttribute="centerX" constant="-15" id="kPt-nX-DId"/>
+                        <constraint firstAttribute="bottom" secondItem="fQJ-hQ-nOe" secondAttribute="bottom" id="pDc-Ik-Bdb"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="NCc-VD-JEz" firstAttribute="bottom" secondItem="kMM-ue-pvh" secondAttribute="bottom" id="BMH-yQ-Bca"/>
+                <constraint firstItem="NCc-VD-JEz" firstAttribute="top" secondItem="kMM-ue-pvh" secondAttribute="top" id="Tdd-9v-oiG"/>
+                <constraint firstItem="NCc-VD-JEz" firstAttribute="leading" secondItem="kMM-ue-pvh" secondAttribute="trailing" id="YaU-cY-2eL"/>
+                <constraint firstItem="NCc-VD-JEz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="e4Q-6I-LGr"/>
+                <constraint firstItem="QS6-tC-qym" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="fnY-pM-Uip"/>
+                <constraint firstItem="kMM-ue-pvh" firstAttribute="leading" secondItem="QS6-tC-qym" secondAttribute="trailing" id="jUV-Uk-2Fu"/>
+                <constraint firstItem="QS6-tC-qym" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="wNF-4G-Ate"/>
+                <constraint firstAttribute="trailing" secondItem="NCc-VD-JEz" secondAttribute="trailing" constant="10" id="xhj-7e-LVn"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="leftBtn" destination="QS6-tC-qym" id="z3A-mt-vRA"/>
+                <outlet property="moreBtn" destination="fQJ-hQ-nOe" id="Rfo-fH-6Df"/>
+                <outlet property="right" destination="NCc-VD-JEz" id="ezk-Fu-wCs"/>
+                <outlet property="tapView" destination="kMM-ue-pvh" id="dsM-wX-Mmd"/>
+                <outlet property="timeLab" destination="MLc-FL-v9i" id="wqu-81-ncH"/>
+            </connections>
+            <point key="canvasLocation" x="243.5" y="275"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Bootm" width="8" height="5"/>
+        <image name="left" width="11" height="11"/>
+        <image name="right" width="11" height="11"/>
+    </resources>
+</document>

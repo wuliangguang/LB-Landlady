@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="z1g-l8-uHw">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--My Merchant Change Phone View Controller-->
+        <scene sceneID="Yl3-Fy-HOj">
+            <objects>
+                <tableViewController id="z1g-l8-uHw" customClass="MyMerchantChangePhoneViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="oOj-qW-1ul">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="" id="w1h-xr-dND">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="jL5-Ad-RLG">
+                                        <rect key="frame" x="0.0" y="35" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jL5-Ad-RLG" id="Wb0-Og-POP">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入联系人电话" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pGD-9k-jjQ">
+                                                    <rect key="frame" x="15" y="0.0" width="585" height="43.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="pGD-9k-jjQ" firstAttribute="leading" secondItem="Wb0-Og-POP" secondAttribute="leading" constant="15" id="eSB-cE-hK0"/>
+                                                <constraint firstItem="pGD-9k-jjQ" firstAttribute="top" secondItem="Wb0-Og-POP" secondAttribute="top" id="lIt-Dr-Dzp"/>
+                                                <constraint firstAttribute="trailing" secondItem="pGD-9k-jjQ" secondAttribute="trailing" id="n6I-b7-foo"/>
+                                                <constraint firstAttribute="bottom" secondItem="pGD-9k-jjQ" secondAttribute="bottom" id="oAA-sV-CWM"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="z1g-l8-uHw" id="x6s-Zc-jbm"/>
+                            <outlet property="delegate" destination="z1g-l8-uHw" id="Gg8-e4-zxo"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="phoneField" destination="pGD-9k-jjQ" id="agC-l7-PbO"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u5h-KP-ABf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="713" y="149"/>
+        </scene>
+    </scenes>
+</document>

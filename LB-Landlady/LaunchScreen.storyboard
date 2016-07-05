@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchImage_BG.png" translatesAutoresizingMaskIntoConstraints="NO" id="hph-4K-NKT">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="dZ7-gN-BTg">
+                                <rect key="frame" x="21" y="-120" width="559" height="840"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dZ7-gN-BTg" secondAttribute="height" multiplier="253:380" id="SxW-1x-Naq"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="dZ7-gN-BTg" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="010-ie-oDM"/>
+                            <constraint firstItem="dZ7-gN-BTg" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="3Vk-C6-9N3"/>
+                            <constraint firstItem="dZ7-gN-BTg" firstAttribute="leading" relation="lessThanOrEqual" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="30" id="F0Y-Vk-rPZ"/>
+                            <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="dZ7-gN-BTg" secondAttribute="trailing" constant="30" id="GHd-wc-j4z"/>
+                            <constraint firstAttribute="trailing" secondItem="hph-4K-NKT" secondAttribute="trailing" id="Pda-Ez-BSg"/>
+                            <constraint firstItem="dZ7-gN-BTg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="20" id="Qn7-Ur-ibl"/>
+                            <constraint firstItem="hph-4K-NKT" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="apA-Tm-uub"/>
+                            <constraint firstItem="hph-4K-NKT" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="quR-43-1xk"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="hph-4K-NKT" secondAttribute="bottom" id="ySZ-y4-2DG"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dZ7-gN-BTg" secondAttribute="trailing" constant="20" id="zAK-Rv-bNl"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-172" y="370"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LaunchImage.png" width="1000" height="1500"/>
+        <image name="LaunchImage_BG.png" width="1280" height="2272"/>
+    </resources>
+</document>

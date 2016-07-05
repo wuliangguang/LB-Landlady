@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="pEt-rG-edU">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--设置新密码-->
+        <scene sceneID="Ml5-Xk-Enx">
+            <objects>
+                <viewController id="pEt-rG-edU" customClass="NewPsdResultVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hUE-Zg-CPo"/>
+                        <viewControllerLayoutGuide type="bottom" id="f87-Li-1c3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TfA-Te-6Jj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="setNewOK" translatesAutoresizingMaskIntoConstraints="NO" id="ghW-ng-aPj">
+                                <rect key="frame" x="250" y="50" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="ErA-GP-NY4"/>
+                                    <constraint firstAttribute="width" constant="100" id="Kmd-jW-C05"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新密码设置成功，请牢记！" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZjZ-2U-cBP">
+                                <rect key="frame" x="216" y="165" width="168" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJs-6J-LIz">
+                                <rect key="frame" x="20" y="242" width="560" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="bns-Ie-1sy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="返回到银行卡页面">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backToCardVC:" destination="pEt-rG-edU" eventType="touchUpInside" id="XUL-Jv-Yps"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FJs-6J-LIz" firstAttribute="leading" secondItem="TfA-Te-6Jj" secondAttribute="leading" constant="20" id="4Rf-xy-2Kn"/>
+                            <constraint firstAttribute="centerX" secondItem="ZjZ-2U-cBP" secondAttribute="centerX" id="AJL-sO-GNV"/>
+                            <constraint firstAttribute="trailing" secondItem="FJs-6J-LIz" secondAttribute="trailing" constant="20" id="QVn-c6-fbL"/>
+                            <constraint firstItem="ZjZ-2U-cBP" firstAttribute="top" secondItem="ghW-ng-aPj" secondAttribute="bottom" constant="15" id="lB4-jY-2c4"/>
+                            <constraint firstAttribute="centerX" secondItem="ghW-ng-aPj" secondAttribute="centerX" id="ngp-1M-jkU"/>
+                            <constraint firstItem="ghW-ng-aPj" firstAttribute="top" secondItem="TfA-Te-6Jj" secondAttribute="top" constant="50" id="xe8-AC-o9M"/>
+                            <constraint firstItem="FJs-6J-LIz" firstAttribute="top" secondItem="ZjZ-2U-cBP" secondAttribute="bottom" constant="60" id="yLC-B6-xpS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="设置新密码" id="vSt-dd-0bc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ggL-HA-efm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="420" y="162"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="setNewOK" width="113" height="113"/>
+    </resources>
+</document>

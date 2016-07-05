@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MySourcePublicCategoryView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRc-x1-psQ">
+                    <rect key="frame" x="291" y="12" width="4" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="CC2-Bv-sLb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_right" translatesAutoresizingMaskIntoConstraints="NO" id="TT7-vv-ynm">
+                    <rect key="frame" x="303" y="18" width="9" height="9"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="9" id="b9B-bD-KdU"/>
+                        <constraint firstAttribute="width" constant="9" id="frK-cB-Kso"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="货源类别" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OA2-dd-dTk">
+                    <rect key="frame" x="8" y="12" width="68" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="68" id="Fpk-PR-8Y1"/>
+                        <constraint firstAttribute="height" constant="21" id="TM9-i0-x1Q"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="OA2-dd-dTk" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="1cM-kq-FKZ"/>
+                <constraint firstItem="OA2-dd-dTk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="FOY-Mg-UYL"/>
+                <constraint firstItem="TT7-vv-ynm" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="cQb-yZ-wJ8"/>
+                <constraint firstItem="dRc-x1-psQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="szX-vA-XTb"/>
+                <constraint firstItem="TT7-vv-ynm" firstAttribute="leading" secondItem="dRc-x1-psQ" secondAttribute="trailing" constant="8" id="uiY-YB-09H"/>
+                <constraint firstAttribute="trailing" secondItem="TT7-vv-ynm" secondAttribute="trailing" constant="8" id="v06-K3-nN2"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="infoLabel" destination="dRc-x1-psQ" id="KNL-m0-Yjb"/>
+                <outlet property="nameLabel" destination="dRc-x1-psQ" id="n4A-4m-Zc5"/>
+            </connections>
+            <point key="canvasLocation" x="280" y="164"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow_right" width="9" height="9"/>
+    </resources>
+</document>

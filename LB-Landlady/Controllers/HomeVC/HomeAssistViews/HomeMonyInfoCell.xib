@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="89" id="KGk-i7-Jjw" customClass="HomeMonyInfoCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="94.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="店铺总收入(元)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hor-NR-KbG">
+                        <rect key="frame" x="106.5" y="5" width="107" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="YeZ-WF-OFO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0U8-wl-1aF">
+                        <rect key="frame" x="8" y="26" width="304" height="43"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="43" id="bAX-7p-woB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                        <color key="textColor" red="1" green="0.50980392159999999" blue="0.031372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Safe_Account_Icon" translatesAutoresizingMaskIntoConstraints="NO" id="DEJ-MN-t4K">
+                        <rect key="frame" x="91" y="70" width="14" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="14" id="DOe-VI-l3K"/>
+                            <constraint firstAttribute="height" constant="15" id="gIE-Pc-Kvm"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="账户安全险保障中" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D2b-bp-pOR">
+                        <rect key="frame" x="112" y="69" width="96" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="YKL-eG-uOF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.31372549020000001" green="0.69019607839999997" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="D2b-bp-pOR" firstAttribute="leading" secondItem="DEJ-MN-t4K" secondAttribute="trailing" constant="7" id="GPO-eT-spL"/>
+                    <constraint firstItem="0U8-wl-1aF" firstAttribute="centerX" secondItem="hor-NR-KbG" secondAttribute="centerX" id="GUs-QP-ES0"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="0U8-wl-1aF" secondAttribute="trailing" id="IAI-d9-0oe"/>
+                    <constraint firstItem="D2b-bp-pOR" firstAttribute="top" secondItem="0U8-wl-1aF" secondAttribute="bottom" id="TkJ-wk-3e3"/>
+                    <constraint firstItem="D2b-bp-pOR" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="WLw-yL-xs4"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="0U8-wl-1aF" secondAttribute="leading" id="YO7-03-sa8"/>
+                    <constraint firstItem="hor-NR-KbG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="g6x-ij-A38"/>
+                    <constraint firstItem="hor-NR-KbG" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="iG5-4j-vRV"/>
+                    <constraint firstItem="0U8-wl-1aF" firstAttribute="top" secondItem="hor-NR-KbG" secondAttribute="bottom" id="s9Y-2v-TOS"/>
+                    <constraint firstItem="DEJ-MN-t4K" firstAttribute="top" secondItem="0U8-wl-1aF" secondAttribute="bottom" constant="1" id="zPk-Lt-5tD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="moneyLabel" destination="0U8-wl-1aF" id="tf3-C2-bln"/>
+            </connections>
+            <point key="canvasLocation" x="204" y="191.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Safe_Account_Icon" width="12" height="13"/>
+    </resources>
+</document>

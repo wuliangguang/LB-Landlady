@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="FM_MYFinacial_Cell" id="WlN-hc-nnO" customClass="FM_MYFinacial_Cell">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WlN-hc-nnO" id="6Ir-JM-XWq">
+                <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FP_MY_managerMoney" translatesAutoresizingMaskIntoConstraints="NO" id="1Aj-8H-BId">
+                        <rect key="frame" x="20" y="11" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="1Aj-8H-BId" secondAttribute="height" multiplier="1:1" id="ZDX-0Y-KPb"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的理财" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQj-gp-pIS">
+                        <rect key="frame" x="54" y="14" width="56" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1Aj-8H-BId" firstAttribute="top" secondItem="6Ir-JM-XWq" secondAttribute="top" constant="11" id="GJ8-ij-fJj"/>
+                    <constraint firstItem="HQj-gp-pIS" firstAttribute="centerY" secondItem="6Ir-JM-XWq" secondAttribute="centerY" id="StL-ex-ZVb"/>
+                    <constraint firstItem="HQj-gp-pIS" firstAttribute="leading" secondItem="1Aj-8H-BId" secondAttribute="trailing" constant="12" id="SyD-9p-stA"/>
+                    <constraint firstItem="1Aj-8H-BId" firstAttribute="leading" secondItem="6Ir-JM-XWq" secondAttribute="leading" constant="20" id="hbA-Im-aW8"/>
+                    <constraint firstAttribute="bottom" secondItem="1Aj-8H-BId" secondAttribute="bottom" constant="11" id="yd4-CC-Qyk"/>
+                </constraints>
+            </tableViewCellContentView>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="FP_MY_managerMoney" width="19" height="19"/>
+    </resources>
+</document>

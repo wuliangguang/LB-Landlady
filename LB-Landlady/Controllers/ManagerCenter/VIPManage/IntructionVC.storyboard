@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tYp-wz-NLt">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--IntructionVC-->
+        <scene sceneID="yAe-UN-GpG">
+            <objects>
+                <viewController id="tYp-wz-NLt" customClass="IntructionVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JXm-co-CEV"/>
+                        <viewControllerLayoutGuide type="bottom" id="VZY-3T-U8d"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="d4M-u7-HmE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKb-8u-x8z">
+                                <rect key="frame" x="20" y="30" width="560" height="233"/>
+                                <string key="text">会员制可以更好的产生用户黏性，提升经营收益。老板娘会员说明：1.当选中并打开会员等级后，我们将默认打开老板娘中普通会员卡等级，可以将所有有过消费的用户绑定成为普通会员；2.可以对申请会员的用户进行审核；3.通过制定会员等级及折扣力度可以有效的促进会员用户消费；4.会员等级最多可以5个等级；</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VZY-3T-U8d" firstAttribute="top" relation="greaterThanOrEqual" secondItem="nKb-8u-x8z" secondAttribute="bottom" constant="5" id="LmG-BQ-AAI"/>
+                            <constraint firstItem="nKb-8u-x8z" firstAttribute="top" secondItem="JXm-co-CEV" secondAttribute="bottom" constant="10" id="W7O-Vm-lQt"/>
+                            <constraint firstAttribute="trailing" secondItem="nKb-8u-x8z" secondAttribute="trailing" constant="20" id="dPu-wv-XsO"/>
+                            <constraint firstItem="nKb-8u-x8z" firstAttribute="leading" secondItem="d4M-u7-HmE" secondAttribute="leading" constant="20" id="hqF-2D-lbf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="introductLabel" destination="nKb-8u-x8z" id="hzW-P0-EOq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i79-eL-SZO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="616" y="408"/>
+        </scene>
+    </scenes>
+</document>
